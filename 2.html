@@ -17,13 +17,37 @@
 
 <style>
 
+body{
+  margin:0;
+}
+
 a {
   color:black;
+  text-decoration: none;
 }
 
 h1 {
-  font-size:45px; text-align: center;
+  font-size:45px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
 }
+
+ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding-left: :40px; padding-top: 20px;
+  font-size: 25px;
+}
+
+#active{color:red;}
+
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  }
 
 </style>
 
@@ -31,16 +55,37 @@ h1 {
 
 <body>
   <h1><a href="index.html">My lovely cat siru</a></h1>
+
+<div id="grid">
+
+
 <ol>
   <li><a href="1.html">Siru</a></li>
-  <li><a href="2.html">Food</a></li>
+  <li><a href="2.html" id="active">Food</a></li>
   <li><a href="3.html">Toy</a></li>
 </ol>
 
-<h1>시루는 건식,습식 둘 다 먹는다</h1>
+
+<div id="article">
+
+
+
+<h2>시루는 건식,습식 둘 다 먹는다</h2>
 습식은 오전 6시와 오후 6시 하루 두 번 적당량을 먹고
 건식은 전용그릇에 평평하게 채울 정도로 매번 채워서 자율급식을 한다.
 간식은 하루에 1번 챠오츄르를 2~3번정도 템테이션을 총 15개 정도 준다.
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
