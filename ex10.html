@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+
+    <script>
+      var home = {
+        "Mypet":"greedysiru",
+        "I":"jaemin"
+      };
+      document.write("Mypet : "+home.Mypet+"<br>");
+      document.write("I : "+home.I+"<br>");
+      home.siru = "ugly";
+      document.write("siru : "+home.siru+"<br>");
+      home["siru eat"] = "churu";
+      document.write("siru eat : "+home["siru eat"]);
+    </script>
+
+    <h2>Interate</h2>
+    <script>
+      for(var key in home) {
+        document.write(key+' : '+home[key]+'<br>');
+      }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      home.showAll = function(){
+        for(var key in this) {
+          document.write(key+' : '+this[key]+'<br>');
+        }
+      }
+      home.showAll()
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
